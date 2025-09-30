@@ -1,2 +1,27 @@
-# Ignorar carpetas de layers
+# Ignorar entornos virtuales
+venv/
+.env
+
+# Ignorar carpetas de dependencias pesadas (layers AWS locales)
 layer_AWS/
+**/python/
+
+# Ignorar archivos de compilación / caché
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar archivos temporales / logs
+*.log
+*.tmp
+*.swp
+
+# Ignorar paquetes ZIP generados para Lambda/Layers
+*.zip
+
+# Ignorar configuraciones locales de VSCode
+.vscode/
+
+# Ignorar base de datos sqlite local (si llegás a usar)
+*.db
